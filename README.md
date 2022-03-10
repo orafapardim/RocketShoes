@@ -1,11 +1,7 @@
-# Rocket-Shoes
+# Rocket Shoes
 > Homepage da marca de calçados esportivos da Rocket Shoes. Desafio de desenvolvimento web proposto pela @rocketseat em sua plataforma.
 
-<div display="flex" justify-content="center">
-  <img src="https://user-images.githubusercontent.com/83538547/157708463-2e84dba7-a870-41fa-bd2a-896dbe08bf90.png" height="320px">
-  <img src="https://user-images.githubusercontent.com/83538547/157708591-b6a5bfc9-da58-4033-84a7-3dd47536f5a6.png" height="250px">
-  <img src="https://user-images.githubusercontent.com/83538547/157708600-8a0268a0-ff75-42df-8b0e-3e39e218b95b.png" height="200px">
-</div>
+<img src="https://user-images.githubusercontent.com/83538547/157708463-2e84dba7-a870-41fa-bd2a-896dbe08bf90.png" width="100%">
 
 # Meta
 ### by Rafael Pardim | @orafapardim - orafapardim@gmail.com
