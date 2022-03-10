@@ -1,0 +1,23 @@
+.header {
+  @include flx(center, row, space-between);
+  gap: .5rem;
+  height: 10vh;
+  padding: 0 3.5rem 0 1rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+
+  & .input {
+    min-width: 130px;
+    width: 25%;
+  }
+}
+
+@include for-desktop-only {
+  .header {
+    @include flx(center, row, space-around);
+    gap: 1.5rem;
+    padding: 0 2rem;
+  }
+}

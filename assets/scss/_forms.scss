@@ -1,0 +1,10 @@
+.input {
+  background-color: $white;
+  border: none;
+  padding: 1rem;
+
+  &--search {
+    background: $white url(../img/icons/icon-search.svg) no-repeat 1rem center;
+    padding-left: 3rem;
+  }
+}

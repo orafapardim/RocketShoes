@@ -1,0 +1,40 @@
+.link {
+  color: $black;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+
+  &--explore {
+    @include flx(center, row, center);
+    background: $black;
+    color: $white;
+    padding: 3rem ;
+    position: relative;
+
+    &::before {
+      content: url(../img/icons/icon-arrow.svg);
+      position: absolute;
+      right: 1rem;  
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  .link {
+    font-size: 1.5rem;
+
+    &--explore {
+      padding: 2rem 4.8125rem;
+
+      &::before {
+        right: 2.5rem;  
+      }
+    }
+  }
+}

@@ -1,0 +1,51 @@
+/* Váriaveis de cores */
+$black: #000;
+$dark-gray: #9C9696;
+$light-gray: #E5E5E5;
+$gray: #C4C4C4;
+$red: #FF0000;
+$white: #fff;
+
+/* Mixins */
+@mixin flx ($align, $direction, $justify) {
+  align-items: $align;
+  flex-direction: $direction;
+  display: flex;
+  justify-content: $justify;
+}
+
+@mixin grd-pos ($column-start, $column-end, $row-start, $row-end) {
+  grid-column-start: $column-start;
+  grid-column-end: $column-end;
+  grid-row-start: $row-start;
+  grid-row-end: $row-end;
+}
+
+@mixin for-phone-only {
+  @media (max-width: 425.98px) {
+    @content;
+  }
+}
+
+@mixin for-tablet-only {
+  @media (min-width: 425.98px) and (max-width: 768.98px) {
+    @content;
+  }
+}
+
+@mixin for-desktop-only {
+  @media (min-width: 768.98px) {
+    @content;
+  }
+}
+
+@mixin for-ultrawaid-only {
+  @media (min-width: 1900.98px) {
+    @content;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  transition: .5s;
+}

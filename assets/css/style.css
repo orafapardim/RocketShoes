@@ -1,0 +1,335 @@
+@charset "UTF-8";
+/* Váriaveis de cores */
+/* Mixins */
+* {
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+
+html {
+  font: normal 16px "Roboto", sans-serif;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+}
+
+.text {
+  color: #9C9696;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+@media (min-width: 768.98px) {
+  .title {
+    font-size: 3.75rem;
+  }
+
+  .subtitle {
+    font-size: 2.5rem;
+  }
+}
+.btn {
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 1rem 2rem;
+  width: auto;
+}
+.btn:hover {
+  cursor: pointer;
+  transition: 0.5s;
+}
+.btn--primary {
+  background: #FF0000;
+}
+.btn--primary:hover {
+  background-color: #000;
+}
+.btn--bag {
+  background: transparent url(../img/icons/icon-bag.svg) no-repeat center;
+  padding: 1rem;
+}
+
+@media (min-width: 768.98px) {
+  .btn {
+    padding: 2rem 4rem;
+  }
+  .btn--bag {
+    padding: 1rem;
+  }
+}
+.link {
+  color: #000;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.link:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.link--explore {
+  align-items: center;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  background: #000;
+  color: #fff;
+  padding: 3rem;
+  position: relative;
+}
+.link--explore::before {
+  content: url(../img/icons/icon-arrow.svg);
+  position: absolute;
+  right: 1rem;
+}
+
+@media (min-width: 1000px) {
+  .link {
+    font-size: 1.5rem;
+  }
+  .link--explore {
+    padding: 2rem 4.8125rem;
+  }
+  .link--explore::before {
+    right: 2.5rem;
+  }
+}
+.nav--collapse {
+  align-items: center;
+  flex-direction: row;
+  display: flex;
+  justify-content: flex-end;
+  height: 100%;
+  flex: 1;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+}
+@media (min-width: 768.98px) {
+  .nav--collapse {
+    position: static;
+  }
+}
+.nav--collapse button {
+  background: url(../img/icons/menu-burger-open.svg) no-repeat center/auto border-box;
+  border: none;
+  display: block;
+  height: 100%;
+  position: absolute;
+  right: 0.5rem;
+  z-index: 100;
+  width: 3rem;
+}
+.nav--collapse button.active {
+  background: url(../img/icons/menu-burger-close.svg) no-repeat center/auto border-box;
+}
+@media (min-width: 768.98px) {
+  .nav--collapse button {
+    display: none;
+  }
+}
+.nav--collapse ul.nav--menu {
+  display: none;
+}
+@media (min-width: 768.98px) {
+  .nav--collapse ul.nav--menu {
+    align-items: center;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-around;
+    flex: 1;
+    gap: 1rem;
+  }
+}
+.nav--collapse ul.nav--menu.active {
+  align-items: flex-start;
+  flex-direction: column;
+  display: flex;
+  justify-content: flex-start;
+  background-color: #E5E5E5;
+  border-left: 0.25rem solid #9C9696;
+  height: auto;
+  position: absolute;
+  top: 100%;
+  width: auto;
+}
+.nav--collapse ul.nav--menu.active li {
+  align-items: center;
+  flex-direction: row;
+  display: flex;
+  justify-content: flex-start;
+  height: 3.5rem;
+  padding: 0 1rem;
+  width: 100%;
+}
+.nav--collapse ul.nav--menu.active li a {
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+.nav--collapse ul.nav--menu.active li.link--active a {
+  font-weight: bold;
+}
+
+.input {
+  background-color: #fff;
+  border: none;
+  padding: 1rem;
+}
+.input--search {
+  background: #fff url(../img/icons/icon-search.svg) no-repeat 1rem center;
+  padding-left: 3rem;
+}
+
+.header {
+  align-items: center;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  height: 10vh;
+  padding: 0 3.5rem 0 1rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+.header .input {
+  min-width: 130px;
+  width: 25%;
+}
+
+@media (min-width: 768.98px) {
+  .header {
+    align-items: center;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-around;
+    gap: 1.5rem;
+    padding: 0 2rem;
+  }
+}
+.promotion {
+  align-items: flex-start;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  gap: 1rem;
+  padding: 10vh 1rem 1rem 1rem;
+}
+
+@media (min-width: 768.98px) {
+  .promotion {
+    gap: 0.5rem;
+    height: 100%;
+    padding: 20% 2rem 0 10%;
+  }
+}
+.shoes {
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  justify-content: flex-end;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  background: #E5E5E5 url(../img/tenis-1-ampliado.png) no-repeat center/50%;
+  flex: 1;
+}
+.shoes__list {
+  align-items: center;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+.shoes__list--item {
+  width: 28%;
+}
+.shoes__list--item:nth-child(2) {
+  border-bottom: 0.275rem solid #FF0000;
+}
+.shoes__list--image {
+  width: 100%;
+}
+
+@media (min-width: 768.98px) {
+  .shoes {
+    height: 100%;
+  }
+}
+.footer {
+  align-items: stretch;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  height: 15vh;
+}
+.footer--video {
+  display: none;
+}
+
+.social--list {
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  gap: 0.5rem;
+  padding: 0.5rem;
+}
+
+@media (min-width: 768.98px) {
+  .footer {
+    height: 18vh;
+  }
+  .footer--video {
+    display: block;
+    height: 100%;
+    width: 15%;
+  }
+
+  .social--list {
+    align-items: center;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+}
+.main {
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  height: 85vh;
+}
+@media (min-width: 768.98px) {
+  .main {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 100%;
+    height: 82vh;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

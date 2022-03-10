@@ -1,0 +1,14 @@
+.promotion {
+  @include flx(flex-start, column, center);
+  @include grd-pos(1, 2, 1, 2);
+  gap: 1rem;
+  padding: 10vh 1rem 1rem 1rem;
+}
+
+@include for-desktop-only {
+  .promotion {
+    gap: .5rem;
+    height: 100%;
+    padding: 20% 2rem 0 10%;
+  }
+}

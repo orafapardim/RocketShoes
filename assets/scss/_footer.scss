@@ -1,0 +1,37 @@
+.footer {
+  @include flx(stretch, row, space-between);
+  height: 15vh;
+
+  &--video {
+    display: none;
+  }
+}
+
+.social {
+  &--list {
+    @include flx(center, column, center);
+    flex: 1;
+    gap: .5rem;
+    padding: .5rem;
+  }
+}
+
+@include for-desktop-only {
+  .footer {
+    height: 18vh;
+
+    &--video {
+      display: block;
+      height: 100%;
+      width: 15%;
+    }
+  }
+
+  .social {
+    &--list {
+      @include flx(center, row, center);
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+  }
+}

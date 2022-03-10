@@ -1,0 +1,31 @@
+.shoes {
+  @include flx(center, column, flex-end);
+  @include grd-pos(2, 3, 1, 2);
+  background: $light-gray url(../img/tenis-1-ampliado.png) no-repeat center / 50%;
+  flex: 1;
+
+  &__list {
+    @include flx(center, row, center);
+    gap: 2rem;
+    margin-bottom: 1rem;
+    width: 100%;
+
+    &--item {
+      width: 28%;
+
+      &:nth-child(2) {
+        border-bottom: .275rem solid $red;
+      }
+    }
+
+    &--image {
+      width: 100%;
+    }
+  }
+}
+
+@include for-desktop-only {
+  .shoes {
+    height: 100%;
+  }
+}

@@ -1,0 +1,37 @@
+.btn {
+  border: none;
+  color: $white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 1rem 2rem;
+  width: auto;
+
+  &:hover {
+    cursor: pointer;
+    transition: .5s;
+  }
+
+  &--primary {
+    background: $red;
+  
+    &:hover {
+      background-color: $black;
+    }
+  }
+
+  &--bag {
+    background: transparent url(../img/icons/icon-bag.svg) no-repeat center;
+    padding: 1rem;
+  }
+}
+
+@include for-desktop-only {
+  .btn {
+    padding: 2rem 4rem;
+
+    &--bag {
+      padding: 1rem;
+    }
+  }
+}
