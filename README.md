@@ -1,5 +1,5 @@
 # Rocket Shoes
-> Homepage da marca de calçados esportivos da Rocket Shoes. Desafio de desenvolvimento web proposto pela @rocketseat em sua plataforma.
+> Desafio da @rocketseat para iniciantes em front-end: Desenvolvimento do layout da homepage para o e-commerce da Rocket Shoes.
 
 <img src="https://user-images.githubusercontent.com/83538547/157708463-2e84dba7-a870-41fa-bd2a-896dbe08bf90.png" width="100%">
 
